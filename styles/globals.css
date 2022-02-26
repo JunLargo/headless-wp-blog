@@ -14,3 +14,23 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.container {
+    max-width: 960px;
+    margin: 100px auto;
+    color: #7F7F7F;
+    font-weight: normal;
+}
+
+.post-data {
+    border-bottom: 1px solid #eee;
+}
+
+.home-title {
+    margin-bottom: 50px;
+    color: #4D4D4D;
+}
+
+.post-title:hover {
+    color: #4D4D4D;
+}
