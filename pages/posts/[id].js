@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-
+//get blog post path
 export const getStaticPaths = async () => {
     const res = await fetch('https://p1.jlargo.dev/wp-json/wp/v2/posts/');
     const data = await res.json();
