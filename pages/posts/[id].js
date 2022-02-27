@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 //get blog post path
 export const getStaticPaths = async () => {
-    const res = await fetch('https:tradesformation.com.au/wp-json/wp/v2/posts/');
+    const res = await fetch('https://p1.jlargo.dev/wp-json/wp/v2/posts/');
     const data = await res.json();
 
     const paths = data.map(post => {
@@ -19,7 +19,7 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = async (context) => {
     const id = context.params.id;
-    const res = await fetch('https:tradesformation.com.au/wp-json/wp/v2/posts/' + id);
+    const res = await fetch('https://p1.jlargo.dev/wp-json/wp/v2/posts/' + id);
     const data = await res.json();
 
     return {
