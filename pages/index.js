@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 
 export const getStaticProps = async () => {
-    const res = await fetch('https://p1.jlargo.dev/wp-json/wp/v2/posts/');
+    const res = await fetch('https:tradesformation.com.au/wp-json/wp/v2/posts/');
     const data = await res.json();
 
     return {
